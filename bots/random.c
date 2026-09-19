@@ -8,11 +8,11 @@
 #include "chess.h"
 
 const char *BOT_NAME = "random";
-Move best_root;
+Move        best_root;
 
 int search(double seconds, int max_depth) {
 	Move list[MAX_MOVES], legal[MAX_MOVES];
-	int n, i, nlegal = 0;
+	int  n, i, nlegal = 0;
 
 	(void)seconds;
 	(void)max_depth;
